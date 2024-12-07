@@ -3867,6 +3867,24 @@ export const aiModels: AIModels = {
       }
     },
     {
+      "name": "gemini/gemini-exp-1206",
+      "provider": "gemini",
+      "logo": "/logos/google.svg",
+      "sample_spec": {
+        "max_tokens": 8192,
+        "max_input_tokens": 2097152,
+        "max_output_tokens": 8192,
+        "input_cost_per_token": "0",
+        "output_cost_per_token": "0",
+        "litellm_provider": "gemini",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": false,
+        "supports_vision": true,
+        "source": "https://ai.google.dev/pricing"
+      }
+    },
+    {
       "name": "gemini/gemini-1.5-flash-exp-0827",
       "provider": "gemini",
       "logo": "/logos/google.svg",
@@ -5711,7 +5729,7 @@ export const aiModels: AIModels = {
         "mode": "chat",
         "supports_function_calling": true,
         "supports_parallel_function_calling": false,
-        "supports_vision": true
+        "supports_vision": false
       }
     },
     {
@@ -9624,10 +9642,28 @@ export const aiModels: AIModels = {
       "provider": "vertex_ai-embedding-models",
       "logo": "/logos/google.svg",
       "sample_spec": {
-        "max_tokens": 3072,
-        "max_input_tokens": 3072,
+        "max_tokens": 2048,
+        "max_input_tokens": 2048,
         "max_output_tokens": null,
-        "input_cost_per_token": "0.00000000625",
+        "input_cost_per_token": "0.0000001",
+        "output_cost_per_token": "0",
+        "litellm_provider": "vertex_ai-embedding-models",
+        "mode": "embedding",
+        "supports_function_calling": false,
+        "supports_parallel_function_calling": false,
+        "supports_vision": false,
+        "source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models"
+      }
+    },
+    {
+      "name": "text-embedding-005",
+      "provider": "vertex_ai-embedding-models",
+      "logo": "/logos/google.svg",
+      "sample_spec": {
+        "max_tokens": 2048,
+        "max_input_tokens": 2048,
+        "max_output_tokens": null,
+        "input_cost_per_token": "0.0000001",
         "output_cost_per_token": "0",
         "litellm_provider": "vertex_ai-embedding-models",
         "mode": "embedding",
@@ -9645,7 +9681,7 @@ export const aiModels: AIModels = {
         "max_tokens": 2048,
         "max_input_tokens": 2048,
         "max_output_tokens": null,
-        "input_cost_per_token": "0.00000000625",
+        "input_cost_per_token": "0.0000001",
         "output_cost_per_token": "0",
         "litellm_provider": "vertex_ai-embedding-models",
         "mode": "embedding",
@@ -9663,7 +9699,7 @@ export const aiModels: AIModels = {
         "max_tokens": 3072,
         "max_input_tokens": 3072,
         "max_output_tokens": null,
-        "input_cost_per_token": "0.00000000625",
+        "input_cost_per_token": "0.0000001",
         "output_cost_per_token": "0",
         "litellm_provider": "vertex_ai-embedding-models",
         "mode": "embedding",
@@ -9681,7 +9717,7 @@ export const aiModels: AIModels = {
         "max_tokens": 3072,
         "max_input_tokens": 3072,
         "max_output_tokens": null,
-        "input_cost_per_token": "0.00000000625",
+        "input_cost_per_token": "0.0000001",
         "output_cost_per_token": "0",
         "litellm_provider": "vertex_ai-embedding-models",
         "mode": "embedding",
@@ -9699,7 +9735,7 @@ export const aiModels: AIModels = {
         "max_tokens": 3072,
         "max_input_tokens": 3072,
         "max_output_tokens": null,
-        "input_cost_per_token": "0.00000000625",
+        "input_cost_per_token": "0.0000001",
         "output_cost_per_token": "0",
         "litellm_provider": "vertex_ai-embedding-models",
         "mode": "embedding",
@@ -9717,7 +9753,7 @@ export const aiModels: AIModels = {
         "max_tokens": 3072,
         "max_input_tokens": 3072,
         "max_output_tokens": null,
-        "input_cost_per_token": "0.00000000625",
+        "input_cost_per_token": "0.0000001",
         "output_cost_per_token": "0",
         "litellm_provider": "vertex_ai-embedding-models",
         "mode": "embedding",
@@ -9735,7 +9771,7 @@ export const aiModels: AIModels = {
         "max_tokens": 3072,
         "max_input_tokens": 3072,
         "max_output_tokens": null,
-        "input_cost_per_token": "0.00000000625",
+        "input_cost_per_token": "0.0000001",
         "output_cost_per_token": "0",
         "litellm_provider": "vertex_ai-embedding-models",
         "mode": "embedding",
