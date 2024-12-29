@@ -3895,7 +3895,24 @@ export const aiModels: AIModels = {
       }
     },
     {
-      "name": "vertex_ai/mistral-large@2411",
+      "name": "vertex_ai/mistral-large@2411-001",
+      "provider": "vertex_ai-mistral_models",
+      "logo": "/logos/google.svg",
+      "sample_spec": {
+        "max_tokens": 8191,
+        "max_input_tokens": 128000,
+        "max_output_tokens": 8191,
+        "input_cost_per_token": "0.000002",
+        "output_cost_per_token": "0.000006",
+        "litellm_provider": "vertex_ai-mistral_models",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": false,
+        "supports_vision": false
+      }
+    },
+    {
+      "name": "vertex_ai/mistral-large-2411",
       "provider": "vertex_ai-mistral_models",
       "logo": "/logos/google.svg",
       "sample_spec": {
@@ -4784,12 +4801,29 @@ export const aiModels: AIModels = {
       }
     },
     {
+      "name": "openrouter/deepseek/deepseek-chat",
+      "provider": "openrouter",
+      "logo": "/logos/openrouter.svg",
+      "sample_spec": {
+        "max_tokens": 8192,
+        "max_input_tokens": 66000,
+        "max_output_tokens": 4096,
+        "input_cost_per_token": "0.00000014",
+        "output_cost_per_token": "0.00000028",
+        "litellm_provider": "openrouter",
+        "mode": "chat",
+        "supports_function_calling": false,
+        "supports_parallel_function_calling": false,
+        "supports_vision": false
+      }
+    },
+    {
       "name": "openrouter/deepseek/deepseek-coder",
       "provider": "openrouter",
       "logo": "/logos/openrouter.svg",
       "sample_spec": {
-        "max_tokens": 4096,
-        "max_input_tokens": 32000,
+        "max_tokens": 8192,
+        "max_input_tokens": 66000,
         "max_output_tokens": 4096,
         "input_cost_per_token": "0.00000014",
         "output_cost_per_token": "0.00000028",
