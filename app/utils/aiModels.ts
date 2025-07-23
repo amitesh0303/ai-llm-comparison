@@ -6049,6 +6049,24 @@ export const aiModels: AIModels = {
       }
     },
     {
+      "name": "gemini/gemini-2.0-flash-live-001",
+      "provider": "gemini",
+      "logo": "/logos/google.svg",
+      "sample_spec": {
+        "max_tokens": 65535,
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 65535,
+        "input_cost_per_token": "0.00000035",
+        "output_cost_per_token": "0.0000015",
+        "litellm_provider": "gemini",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": false,
+        "supports_vision": true,
+        "source": "https://ai.google.dev/gemini-api/docs/models#gemini-2-0-flash-live-001"
+      }
+    },
+    {
       "name": "gemini/gemini-2.5-flash-preview-tts",
       "provider": "gemini",
       "logo": "/logos/google.svg",
@@ -6606,6 +6624,24 @@ export const aiModels: AIModels = {
       }
     },
     {
+      "name": "gemini-2.0-flash-live-preview-04-09",
+      "provider": "vertex_ai-language-models",
+      "logo": "/logos/google.svg",
+      "sample_spec": {
+        "max_tokens": 65535,
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 65535,
+        "input_cost_per_token": "0.0000005",
+        "output_cost_per_token": "0.000002",
+        "litellm_provider": "vertex_ai-language-models",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": false,
+        "supports_vision": true,
+        "source": "https://cloud.google.com/vertex-ai/docs/generative-ai/model-reference/gemini#gemini-2-0-flash-live-preview-04-09"
+      }
+    },
+    {
       "name": "vertex_ai/claude-3-sonnet@20240229",
       "provider": "vertex_ai-anthropic_models",
       "logo": "/logos/google.svg",
@@ -7001,6 +7037,60 @@ export const aiModels: AIModels = {
         "supports_parallel_function_calling": false,
         "supports_vision": false,
         "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing#partner-models"
+      }
+    },
+    {
+      "name": "vertex_ai/meta/llama-3.1-8b-instruct-maas",
+      "provider": "vertex_ai-llama_models",
+      "logo": "/logos/google.svg",
+      "sample_spec": {
+        "max_tokens": 128000,
+        "max_input_tokens": 128000,
+        "max_output_tokens": 2048,
+        "input_cost_per_token": "0",
+        "output_cost_per_token": "0",
+        "litellm_provider": "vertex_ai-llama_models",
+        "mode": "chat",
+        "supports_function_calling": false,
+        "supports_parallel_function_calling": false,
+        "supports_vision": true,
+        "source": "https://console.cloud.google.com/vertex-ai/publishers/meta/model-garden/llama-3.2-90b-vision-instruct-maas"
+      }
+    },
+    {
+      "name": "vertex_ai/meta/llama-3.1-70b-instruct-maas",
+      "provider": "vertex_ai-llama_models",
+      "logo": "/logos/google.svg",
+      "sample_spec": {
+        "max_tokens": 128000,
+        "max_input_tokens": 128000,
+        "max_output_tokens": 2048,
+        "input_cost_per_token": "0",
+        "output_cost_per_token": "0",
+        "litellm_provider": "vertex_ai-llama_models",
+        "mode": "chat",
+        "supports_function_calling": false,
+        "supports_parallel_function_calling": false,
+        "supports_vision": true,
+        "source": "https://console.cloud.google.com/vertex-ai/publishers/meta/model-garden/llama-3.2-90b-vision-instruct-maas"
+      }
+    },
+    {
+      "name": "vertex_ai/meta/llama-3.1-405b-instruct-maas",
+      "provider": "vertex_ai-llama_models",
+      "logo": "/logos/google.svg",
+      "sample_spec": {
+        "max_tokens": 128000,
+        "max_input_tokens": 128000,
+        "max_output_tokens": 2048,
+        "input_cost_per_token": "0.000005",
+        "output_cost_per_token": "0.000016",
+        "litellm_provider": "vertex_ai-llama_models",
+        "mode": "chat",
+        "supports_function_calling": false,
+        "supports_parallel_function_calling": false,
+        "supports_vision": true,
+        "source": "https://console.cloud.google.com/vertex-ai/publishers/meta/model-garden/llama-3.2-90b-vision-instruct-maas"
       }
     },
     {
@@ -14724,6 +14814,278 @@ export const aiModels: AIModels = {
       }
     },
     {
+      "name": "hyperbolic/moonshotai/Kimi-K2-Instruct",
+      "provider": "hyperbolic",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 131072,
+        "max_input_tokens": 131072,
+        "max_output_tokens": 131072,
+        "input_cost_per_token": "0.000002",
+        "output_cost_per_token": "0.000002",
+        "litellm_provider": "hyperbolic",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": false
+      }
+    },
+    {
+      "name": "hyperbolic/deepseek-ai/DeepSeek-R1-0528",
+      "provider": "hyperbolic",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 131072,
+        "max_input_tokens": 131072,
+        "max_output_tokens": 131072,
+        "input_cost_per_token": "0.00000025",
+        "output_cost_per_token": "0.00000025",
+        "litellm_provider": "hyperbolic",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": false
+      }
+    },
+    {
+      "name": "hyperbolic/Qwen/Qwen3-235B-A22B",
+      "provider": "hyperbolic",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 131072,
+        "max_input_tokens": 131072,
+        "max_output_tokens": 131072,
+        "input_cost_per_token": "0.000002",
+        "output_cost_per_token": "0.000002",
+        "litellm_provider": "hyperbolic",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": false
+      }
+    },
+    {
+      "name": "hyperbolic/deepseek-ai/DeepSeek-V3-0324",
+      "provider": "hyperbolic",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 32768,
+        "max_input_tokens": 32768,
+        "max_output_tokens": 32768,
+        "input_cost_per_token": "0.0000004",
+        "output_cost_per_token": "0.0000004",
+        "litellm_provider": "hyperbolic",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": false
+      }
+    },
+    {
+      "name": "hyperbolic/Qwen/QwQ-32B",
+      "provider": "hyperbolic",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 131072,
+        "max_input_tokens": 131072,
+        "max_output_tokens": 131072,
+        "input_cost_per_token": "0.0000002",
+        "output_cost_per_token": "0.0000002",
+        "litellm_provider": "hyperbolic",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": false
+      }
+    },
+    {
+      "name": "hyperbolic/deepseek-ai/DeepSeek-R1",
+      "provider": "hyperbolic",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 32768,
+        "max_input_tokens": 32768,
+        "max_output_tokens": 32768,
+        "input_cost_per_token": "0.0000004",
+        "output_cost_per_token": "0.0000004",
+        "litellm_provider": "hyperbolic",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": false
+      }
+    },
+    {
+      "name": "hyperbolic/deepseek-ai/DeepSeek-V3",
+      "provider": "hyperbolic",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 32768,
+        "max_input_tokens": 32768,
+        "max_output_tokens": 32768,
+        "input_cost_per_token": "0.0000002",
+        "output_cost_per_token": "0.0000002",
+        "litellm_provider": "hyperbolic",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": false
+      }
+    },
+    {
+      "name": "hyperbolic/meta-llama/Llama-3.3-70B-Instruct",
+      "provider": "hyperbolic",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 131072,
+        "max_input_tokens": 131072,
+        "max_output_tokens": 131072,
+        "input_cost_per_token": "0.00000012",
+        "output_cost_per_token": "0.0000003",
+        "litellm_provider": "hyperbolic",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": false
+      }
+    },
+    {
+      "name": "hyperbolic/Qwen/Qwen2.5-Coder-32B-Instruct",
+      "provider": "hyperbolic",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 32768,
+        "max_input_tokens": 32768,
+        "max_output_tokens": 32768,
+        "input_cost_per_token": "0.00000012",
+        "output_cost_per_token": "0.0000003",
+        "litellm_provider": "hyperbolic",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": false
+      }
+    },
+    {
+      "name": "hyperbolic/meta-llama/Llama-3.2-3B-Instruct",
+      "provider": "hyperbolic",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 32768,
+        "max_input_tokens": 32768,
+        "max_output_tokens": 32768,
+        "input_cost_per_token": "0.00000012",
+        "output_cost_per_token": "0.0000003",
+        "litellm_provider": "hyperbolic",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": false
+      }
+    },
+    {
+      "name": "hyperbolic/Qwen/Qwen2.5-72B-Instruct",
+      "provider": "hyperbolic",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 131072,
+        "max_input_tokens": 131072,
+        "max_output_tokens": 131072,
+        "input_cost_per_token": "0.00000012",
+        "output_cost_per_token": "0.0000003",
+        "litellm_provider": "hyperbolic",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": false
+      }
+    },
+    {
+      "name": "hyperbolic/meta-llama/Meta-Llama-3-70B-Instruct",
+      "provider": "hyperbolic",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 131072,
+        "max_input_tokens": 131072,
+        "max_output_tokens": 131072,
+        "input_cost_per_token": "0.00000012",
+        "output_cost_per_token": "0.0000003",
+        "litellm_provider": "hyperbolic",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": false
+      }
+    },
+    {
+      "name": "hyperbolic/NousResearch/Hermes-3-Llama-3.1-70B",
+      "provider": "hyperbolic",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 32768,
+        "max_input_tokens": 32768,
+        "max_output_tokens": 32768,
+        "input_cost_per_token": "0.00000012",
+        "output_cost_per_token": "0.0000003",
+        "litellm_provider": "hyperbolic",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": false
+      }
+    },
+    {
+      "name": "hyperbolic/meta-llama/Meta-Llama-3.1-405B-Instruct",
+      "provider": "hyperbolic",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 32768,
+        "max_input_tokens": 32768,
+        "max_output_tokens": 32768,
+        "input_cost_per_token": "0.00000012",
+        "output_cost_per_token": "0.0000003",
+        "litellm_provider": "hyperbolic",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": false
+      }
+    },
+    {
+      "name": "hyperbolic/meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "provider": "hyperbolic",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 32768,
+        "max_input_tokens": 32768,
+        "max_output_tokens": 32768,
+        "input_cost_per_token": "0.00000012",
+        "output_cost_per_token": "0.0000003",
+        "litellm_provider": "hyperbolic",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": false
+      }
+    },
+    {
+      "name": "hyperbolic/meta-llama/Meta-Llama-3.1-70B-Instruct",
+      "provider": "hyperbolic",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 32768,
+        "max_input_tokens": 32768,
+        "max_output_tokens": 32768,
+        "input_cost_per_token": "0.00000012",
+        "output_cost_per_token": "0.0000003",
+        "litellm_provider": "hyperbolic",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": false
+      }
+    },
+    {
       "name": "databricks/databricks-claude-3-7-sonnet",
       "provider": "databricks",
       "logo": "/logos/databricks.svg",
@@ -17304,23 +17666,6 @@ export const aiModels: AIModels = {
         "supports_parallel_function_calling": false,
         "supports_vision": false,
         "source": "https://fireworks.ai/pricing"
-      }
-    },
-    {
-      "name": "voyage/voyage-01",
-      "provider": "voyage",
-      "logo": "/logos/voyage.svg",
-      "sample_spec": {
-        "max_tokens": 4096,
-        "max_input_tokens": 4096,
-        "max_output_tokens": null,
-        "input_cost_per_token": "0.0000001",
-        "output_cost_per_token": "0",
-        "litellm_provider": "voyage",
-        "mode": "embedding",
-        "supports_function_calling": false,
-        "supports_parallel_function_calling": false,
-        "supports_vision": false
       }
     },
     {
