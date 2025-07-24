@@ -4842,40 +4842,6 @@ export const aiModels: AIModels = {
       }
     },
     {
-      "name": "claude-2",
-      "provider": "anthropic",
-      "logo": "/logos/anthropic.svg",
-      "sample_spec": {
-        "max_tokens": 8191,
-        "max_input_tokens": 100000,
-        "max_output_tokens": 8191,
-        "input_cost_per_token": "0.000008",
-        "output_cost_per_token": "0.000024",
-        "litellm_provider": "anthropic",
-        "mode": "chat",
-        "supports_function_calling": false,
-        "supports_parallel_function_calling": false,
-        "supports_vision": false
-      }
-    },
-    {
-      "name": "claude-2.1",
-      "provider": "anthropic",
-      "logo": "/logos/anthropic.svg",
-      "sample_spec": {
-        "max_tokens": 8191,
-        "max_input_tokens": 200000,
-        "max_output_tokens": 8191,
-        "input_cost_per_token": "0.000008",
-        "output_cost_per_token": "0.000024",
-        "litellm_provider": "anthropic",
-        "mode": "chat",
-        "supports_function_calling": false,
-        "supports_parallel_function_calling": false,
-        "supports_vision": false
-      }
-    },
-    {
       "name": "claude-3-haiku-20240307",
       "provider": "anthropic",
       "logo": "/logos/anthropic.svg",
@@ -4953,23 +4919,6 @@ export const aiModels: AIModels = {
         "max_output_tokens": 4096,
         "input_cost_per_token": "0.000015",
         "output_cost_per_token": "0.000075",
-        "litellm_provider": "anthropic",
-        "mode": "chat",
-        "supports_function_calling": true,
-        "supports_parallel_function_calling": false,
-        "supports_vision": true
-      }
-    },
-    {
-      "name": "claude-3-sonnet-20240229",
-      "provider": "anthropic",
-      "logo": "/logos/anthropic.svg",
-      "sample_spec": {
-        "max_tokens": 4096,
-        "max_input_tokens": 200000,
-        "max_output_tokens": 4096,
-        "input_cost_per_token": "0.000003",
-        "output_cost_per_token": "0.000015",
         "litellm_provider": "anthropic",
         "mode": "chat",
         "supports_function_calling": true,
@@ -6139,6 +6088,24 @@ export const aiModels: AIModels = {
       }
     },
     {
+      "name": "gemini/gemini-2.5-flash-lite",
+      "provider": "gemini",
+      "logo": "/logos/google.svg",
+      "sample_spec": {
+        "max_tokens": 65535,
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 65535,
+        "input_cost_per_token": "0.0000001",
+        "output_cost_per_token": "0.0000004",
+        "litellm_provider": "gemini",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": true,
+        "source": "https://ai.google.dev/gemini-api/docs/models#gemini-2.5-flash-lite"
+      }
+    },
+    {
       "name": "gemini-2.5-flash-preview-05-20",
       "provider": "vertex_ai-language-models",
       "logo": "/logos/google.svg",
@@ -6176,6 +6143,24 @@ export const aiModels: AIModels = {
     },
     {
       "name": "gemini-2.5-flash-lite-preview-06-17",
+      "provider": "vertex_ai-language-models",
+      "logo": "/logos/google.svg",
+      "sample_spec": {
+        "max_tokens": 65535,
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 65535,
+        "input_cost_per_token": "0.0000001",
+        "output_cost_per_token": "0.0000004",
+        "litellm_provider": "vertex_ai-language-models",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_vision": true,
+        "source": "https://ai.google.dev/gemini-api/docs/models#gemini-2.5-flash-preview"
+      }
+    },
+    {
+      "name": "gemini-2.5-flash-lite",
       "provider": "vertex_ai-language-models",
       "logo": "/logos/google.svg",
       "sample_spec": {
