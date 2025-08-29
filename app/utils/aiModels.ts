@@ -4516,6 +4516,60 @@ export const aiModels: AIModels = {
       }
     },
     {
+      "name": "xai/grok-code-fast-1",
+      "provider": "xai",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 256000,
+        "max_input_tokens": 256000,
+        "max_output_tokens": 256000,
+        "input_cost_per_token": "0.0000002",
+        "output_cost_per_token": "0.0000015",
+        "litellm_provider": "xai",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": false,
+        "supports_vision": false,
+        "source": "https://docs.x.ai/docs/models"
+      }
+    },
+    {
+      "name": "xai/grok-code-fast",
+      "provider": "xai",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 256000,
+        "max_input_tokens": 256000,
+        "max_output_tokens": 256000,
+        "input_cost_per_token": "0.0000002",
+        "output_cost_per_token": "0.0000015",
+        "litellm_provider": "xai",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": false,
+        "supports_vision": false,
+        "source": "https://docs.x.ai/docs/models"
+      }
+    },
+    {
+      "name": "xai/grok-code-fast-1-0825",
+      "provider": "xai",
+      "logo": "/placeholder.svg?height=30&width=30",
+      "sample_spec": {
+        "max_tokens": 256000,
+        "max_input_tokens": 256000,
+        "max_output_tokens": 256000,
+        "input_cost_per_token": "0.0000002",
+        "output_cost_per_token": "0.0000015",
+        "litellm_provider": "xai",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": false,
+        "supports_vision": false,
+        "source": "https://docs.x.ai/docs/models"
+      }
+    },
+    {
       "name": "xai/grok-4",
       "provider": "xai",
       "logo": "/placeholder.svg?height=30&width=30",
@@ -21675,42 +21729,6 @@ export const aiModels: AIModels = {
       }
     },
     {
-      "name": "vertex_ai/imagen-4.0-generate-preview-06-06",
-      "provider": "vertex_ai-image-models",
-      "logo": "/logos/google.svg",
-      "sample_spec": {
-        "max_tokens": null,
-        "max_input_tokens": null,
-        "max_output_tokens": null,
-        "input_cost_per_token": null,
-        "output_cost_per_token": null,
-        "litellm_provider": "vertex_ai-image-models",
-        "mode": "image_generation",
-        "supports_function_calling": false,
-        "supports_parallel_function_calling": false,
-        "supports_vision": false,
-        "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing"
-      }
-    },
-    {
-      "name": "vertex_ai/imagen-4.0-ultra-generate-preview-06-06",
-      "provider": "vertex_ai-image-models",
-      "logo": "/logos/google.svg",
-      "sample_spec": {
-        "max_tokens": null,
-        "max_input_tokens": null,
-        "max_output_tokens": null,
-        "input_cost_per_token": null,
-        "output_cost_per_token": null,
-        "litellm_provider": "vertex_ai-image-models",
-        "mode": "image_generation",
-        "supports_function_calling": false,
-        "supports_parallel_function_calling": false,
-        "supports_vision": false,
-        "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing"
-      }
-    },
-    {
       "name": "vertex_ai/imagen-4.0-ultra-generate-001",
       "provider": "vertex_ai-image-models",
       "logo": "/logos/google.svg",
@@ -21730,24 +21748,6 @@ export const aiModels: AIModels = {
     },
     {
       "name": "vertex_ai/imagen-4.0-fast-generate-001",
-      "provider": "vertex_ai-image-models",
-      "logo": "/logos/google.svg",
-      "sample_spec": {
-        "max_tokens": null,
-        "max_input_tokens": null,
-        "max_output_tokens": null,
-        "input_cost_per_token": null,
-        "output_cost_per_token": null,
-        "litellm_provider": "vertex_ai-image-models",
-        "mode": "image_generation",
-        "supports_function_calling": false,
-        "supports_parallel_function_calling": false,
-        "supports_vision": false,
-        "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing"
-      }
-    },
-    {
-      "name": "vertex_ai/imagen-4.0-fast-generate-preview-06-06",
       "provider": "vertex_ai-image-models",
       "logo": "/logos/google.svg",
       "sample_spec": {
@@ -21837,24 +21837,6 @@ export const aiModels: AIModels = {
       }
     },
     {
-      "name": "gemini/imagen-4.0-generate-preview-06-06",
-      "provider": "gemini",
-      "logo": "/logos/google.svg",
-      "sample_spec": {
-        "max_tokens": null,
-        "max_input_tokens": null,
-        "max_output_tokens": null,
-        "input_cost_per_token": null,
-        "output_cost_per_token": null,
-        "litellm_provider": "gemini",
-        "mode": "image_generation",
-        "supports_function_calling": false,
-        "supports_parallel_function_calling": false,
-        "supports_vision": false,
-        "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing"
-      }
-    },
-    {
       "name": "gemini/imagen-4.0-ultra-generate-001",
       "provider": "gemini",
       "logo": "/logos/google.svg",
@@ -21873,43 +21855,7 @@ export const aiModels: AIModels = {
       }
     },
     {
-      "name": "gemini/imagen-4.0-ultra-generate-preview-06-06",
-      "provider": "gemini",
-      "logo": "/logos/google.svg",
-      "sample_spec": {
-        "max_tokens": null,
-        "max_input_tokens": null,
-        "max_output_tokens": null,
-        "input_cost_per_token": null,
-        "output_cost_per_token": null,
-        "litellm_provider": "gemini",
-        "mode": "image_generation",
-        "supports_function_calling": false,
-        "supports_parallel_function_calling": false,
-        "supports_vision": false,
-        "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing"
-      }
-    },
-    {
       "name": "gemini/imagen-4.0-fast-generate-001",
-      "provider": "gemini",
-      "logo": "/logos/google.svg",
-      "sample_spec": {
-        "max_tokens": null,
-        "max_input_tokens": null,
-        "max_output_tokens": null,
-        "input_cost_per_token": null,
-        "output_cost_per_token": null,
-        "litellm_provider": "gemini",
-        "mode": "image_generation",
-        "supports_function_calling": false,
-        "supports_parallel_function_calling": false,
-        "supports_vision": false,
-        "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing"
-      }
-    },
-    {
-      "name": "gemini/imagen-4.0-fast-generate-preview-06-06",
       "provider": "gemini",
       "logo": "/logos/google.svg",
       "sample_spec": {
