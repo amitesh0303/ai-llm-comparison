@@ -13861,7 +13861,7 @@ export const aiModels: AIModels = {
       }
     },
     {
-      "name": "together_ai/OpenAI/gpt-oss-20B",
+      "name": "together_ai/openai/gpt-oss-20b",
       "provider": "together_ai",
       "logo": "/placeholder.svg?height=30&width=30",
       "sample_spec": {
