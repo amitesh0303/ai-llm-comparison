@@ -11009,7 +11009,7 @@ export const aiModels: AIModels = {
         "output_cost_per_token": "0.0000003",
         "litellm_provider": "bedrock_converse",
         "mode": "chat",
-        "supports_function_calling": false,
+        "supports_function_calling": true,
         "supports_parallel_function_calling": false,
         "supports_vision": false
       }
@@ -11026,7 +11026,7 @@ export const aiModels: AIModels = {
         "output_cost_per_token": "0.0000006",
         "litellm_provider": "bedrock_converse",
         "mode": "chat",
-        "supports_function_calling": false,
+        "supports_function_calling": true,
         "supports_parallel_function_calling": false,
         "supports_vision": false
       }
